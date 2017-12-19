@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Cabin|Spectral+SC" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css" type="text/css" />
+	<title>Escritório | Luciano Cerqueira</title>
+</head>
+
+<body ng-app="escritorio">
+	
+<!---- Navigation bar -->
+	<nav>
+	<ul class="nav navbar navbar-custom">
+		<li class="navbar-brand"><a href="#">Luciano Cerqueira</a></li>
+		<div class="float-right nav navbar">
+			<li><a href="#">Início</a></li>
+			<li><a href="#!clientes">Clientes</a></li>
+			<li><a href="#!sobre">Sobre</a></li>
+			<li><a href="#!contato">Contato</a></li>
+		</div>
+
+	</ul>
+</nav>	
+
+
+<!---- Div to insert content -->
+<div ng-view>
+	
+</div>
+
+<!---- Footer section -->
+<section class="footer"></section>
+
+<!---- Resources used -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+</body>
+</html>
