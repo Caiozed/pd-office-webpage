@@ -18,4 +18,8 @@ app.config(function($routeProvider){
 
 $(document).on("click", ".dropdown-toggler", function(){
     $(this).parent("section").children(".dropdown").slideToggle("slow");
+});
+
+$(document).on("click", ".arrow-down", function(){
+    $(".navbar-custom > div").slideToggle("slow");
 })

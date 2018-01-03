@@ -1,3 +1,74 @@
+@media only screen and (min-width: 0) and (max-width: 799px){
+  .navbar-brand{
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .frame-medium{
+    display: none;
+  }
+  
+  .navbar-custom{
+    padding: 0;
+    div{
+        margin: 0 auto;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        display: none;
+    }
+  }
+  
+  .section-1{
+    padding: 1em 2em;
+  }
+  
+  .section-2{
+    width: 50%;
+    padding-top: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    .row{
+      display: block;
+    }
+  }
+  
+  .footer{
+    padding: 0 1em;
+  }
+  
+  .arrow-down{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .navbar-custom{
+    padding: .5em 5em;
+  }
+  
+  .section-1{
+    padding: 5em 6em;
+  }
+  
+  .section-2{
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  
+  .footer{
+    padding: 0 4em;
+    height: 200px;
+  }
+  
+  .arrow-down{
+    display: none;
+  }
+}
+
 .navbar-brand{
   font-family: "Cabin";
   background: rgba(209,209,209,1);
@@ -14,7 +85,6 @@
 }
 
 .navbar-custom{
-  padding: .5em 5em;
   background: black;
   a{
     color: white;
@@ -32,7 +102,6 @@
 .section-1{
   background: url("../images/background-blue.jpg") 100% 100%;
   width: 100%;
-  padding: 5em 6em;
   p{
     font-weight: 500;
     padding: 0;
@@ -46,9 +115,6 @@
 
 .section-2{
   width: 100%;
-  padding-top: 2em;
-  padding-left: 4em;
-  padding-right: 4em;
   p{
     padding: 0;
   }
@@ -82,11 +148,21 @@
 
 .footer{
   background: #444444;
-  padding: 0 5em;
   width: 100%;
-  height: 200px;
   p{
+    margin: 0;
     color: #707070;
   }
+}
+
+.arrow-down {
+    width: 100%; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #313131;
+    &:active{
+      border-top-color: #656565;
+    }
 }
 
